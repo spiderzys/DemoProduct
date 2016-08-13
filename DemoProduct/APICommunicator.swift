@@ -8,7 +8,7 @@
 
 import UIKit
 import Alamofire
-import SwiftyJSON
+
 
 // This class is for communication with API. It contains two methods to get commodity unit and region
 

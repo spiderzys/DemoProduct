@@ -15,7 +15,6 @@
 		697325A51D5CDD9A00E872E7 /* APICommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697325A41D5CDD9A00E872E7 /* APICommunicator.swift */; };
 		697325A71D5CF5FE00E872E7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697325A61D5CF5FE00E872E7 /* RootViewController.swift */; };
 		69C7549F1D5E2232009FE006 /* DataProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C7549E1D5E2232009FE006 /* DataProcessor.swift */; };
-		69C754A71D5E68C9009FE006 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C754A61D5E68C9009FE006 /* InputTextField.swift */; };
 		69C754AA1D5E77DE009FE006 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C754A81D5E77DE009FE006 /* InputViewController.swift */; };
 		69C754AB1D5E77DE009FE006 /* InputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C754A91D5E77DE009FE006 /* InputViewController.xib */; };
 		69C754AD1D5E9B80009FE006 /* RegionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C754AC1D5E9B80009FE006 /* RegionsTableViewCell.swift */; };
@@ -46,7 +45,6 @@
 		697325A41D5CDD9A00E872E7 /* APICommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICommunicator.swift; sourceTree = "<group>"; };
 		697325A61D5CF5FE00E872E7 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		69C7549E1D5E2232009FE006 /* DataProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProcessor.swift; sourceTree = "<group>"; };
-		69C754A61D5E68C9009FE006 /* InputTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		69C754A81D5E77DE009FE006 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		69C754A91D5E77DE009FE006 /* InputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputViewController.xib; sourceTree = "<group>"; };
 		69C754AC1D5E9B80009FE006 /* RegionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionsTableViewCell.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				6973258B1D5CCC7400E872E7 /* Assets.xcassets */,
 				697325A41D5CDD9A00E872E7 /* APICommunicator.swift */,
 				69C7549E1D5E2232009FE006 /* DataProcessor.swift */,
-				69C754A61D5E68C9009FE006 /* InputTextField.swift */,
 				6973258D1D5CCC7400E872E7 /* LaunchScreen.storyboard */,
 				697325901D5CCC7400E872E7 /* Info.plist */,
 			);
@@ -297,7 +294,6 @@
 				697325A71D5CF5FE00E872E7 /* RootViewController.swift in Sources */,
 				69C754AA1D5E77DE009FE006 /* InputViewController.swift in Sources */,
 				69C7549F1D5E2232009FE006 /* DataProcessor.swift in Sources */,
-				69C754A71D5E68C9009FE006 /* InputTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
