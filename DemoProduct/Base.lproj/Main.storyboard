@@ -14,23 +14,20 @@
                         <viewControllerLayoutGuide type="bottom" id="8Pj-kd-9j7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gir-z7-emq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3p-sA-ahf">
-                                <rect key="frame" x="4" y="0.0" width="592" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <color key="backgroundColor" red="0.24705882352941178" green="0.5607843137254902" blue="0.35686274509803922" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="Jsh-0W-BVx" id="nLp-OQ-4cc"/>
                                 </connections>
                             </scrollView>
-                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="EU7-fg-hi0">
-                                <rect key="frame" x="281" y="543" width="39" height="37"/>
-                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bam-52-bng">
-                                <rect key="frame" x="534" y="547" width="46" height="30"/>
+                                <rect key="frame" x="244" y="410" width="60" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="WES-PK-sA3"/>
+                                    <constraint firstAttribute="width" constant="60" id="WES-PK-sA3"/>
                                     <constraint firstAttribute="height" constant="30" id="sYc-sP-MlK"/>
                                 </constraints>
                                 <state key="normal" title="&gt;">
@@ -40,23 +37,33 @@
                                     <action selector="pageButtonTouched:" destination="Jsh-0W-BVx" eventType="touchUpInside" id="XXd-7g-rgl"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-xB-tFK" customClass="TAPageControl">
+                                <rect key="frame" x="135" y="415" width="50" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ZNg-bf-HfT"/>
+                                    <constraint firstAttribute="width" constant="50" id="lvB-0D-8Wr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bam-52-bng" firstAttribute="trailing" secondItem="gir-z7-emq" secondAttribute="trailingMargin" id="5Xo-4o-RJv"/>
-                            <constraint firstItem="bam-52-bng" firstAttribute="centerY" secondItem="EU7-fg-hi0" secondAttribute="centerY" id="8gX-y9-otD"/>
-                            <constraint firstItem="EU7-fg-hi0" firstAttribute="centerX" secondItem="gir-z7-emq" secondAttribute="centerX" id="DPf-cI-9LX"/>
+                            <constraint firstItem="8Pj-kd-9j7" firstAttribute="top" secondItem="IhH-xB-tFK" secondAttribute="bottom" constant="20" id="EiB-vF-Bab"/>
+                            <constraint firstItem="8Pj-kd-9j7" firstAttribute="top" secondItem="bam-52-bng" secondAttribute="bottom" constant="20" id="Fe9-kn-m85"/>
                             <constraint firstItem="Q3p-sA-ahf" firstAttribute="top" secondItem="gir-z7-emq" secondAttribute="topMargin" id="N7L-ie-g2k"/>
                             <constraint firstItem="8Pj-kd-9j7" firstAttribute="top" secondItem="Q3p-sA-ahf" secondAttribute="bottom" id="dbr-pZ-gOS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Q3p-sA-ahf" secondAttribute="trailing" constant="-16" id="fOU-Zh-1EZ"/>
-                            <constraint firstItem="8Pj-kd-9j7" firstAttribute="top" secondItem="EU7-fg-hi0" secondAttribute="bottom" constant="20" id="ijG-jh-N1A"/>
+                            <constraint firstItem="IhH-xB-tFK" firstAttribute="centerX" secondItem="gir-z7-emq" secondAttribute="centerX" id="tNI-3H-BmN"/>
                             <constraint firstItem="Q3p-sA-ahf" firstAttribute="leading" secondItem="gir-z7-emq" secondAttribute="leadingMargin" constant="-16" id="x5l-be-zZH"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="460"/>
                     <connections>
                         <outlet property="imageScrollView" destination="Q3p-sA-ahf" id="LPu-jM-GiR"/>
                         <outlet property="pageButton" destination="bam-52-bng" id="zrN-8F-p96"/>
-                        <outlet property="scrollviewPageControl" destination="EU7-fg-hi0" id="WLv-xc-yVy"/>
+                        <outlet property="scrollviewPageControl" destination="IhH-xB-tFK" id="7s0-Ko-FGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qaf-xO-Qlg" userLabel="First Responder" sceneMemberID="firstResponder"/>

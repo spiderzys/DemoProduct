@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        APICommunicator.sharedInstance().reachCommodityUnitAPI()
+        APICommunicator.sharedInstance().reachRegionsAPI()
+        
+        
         // Override point for customization after application launch.
         return true
     }
