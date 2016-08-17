@@ -43,7 +43,7 @@ class DataProcessor: NSObject {
     private let cache = NSCache()
     
     
-    func cacheData(object:AnyObject? , key:String){
+    internal func cacheData(object:AnyObject? , key:String){
         // store data in cache
         
         if(object != nil){
@@ -52,6 +52,13 @@ class DataProcessor: NSObject {
                 
             }
         }
+    }
+    
+    
+    func driveAPI(){
+        // let api make request
+        APICommunicator.sharedInstance().reachCommodityUnitAPI()
+        APICommunicator.sharedInstance().reachRegionsAPI()
     }
     
     func getDataFromCache(key:String) -> SwiftyJSON.JSON?{

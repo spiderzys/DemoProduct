@@ -37,14 +37,14 @@ class APICommunicator: NSObject {
     
     // --------------------request parameter------------------------
     
-    let commodityUnitRequestUrl = NSURL(string: "http://dualstack.FL2-Dev-api02-1164870265.us-east-1.elb.amazonaws.com/api/v2/data")!  // url to get commodity data
+    private let commodityUnitRequestUrl = NSURL(string: "http://dualstack.FL2-Dev-api02-1164870265.us-east-1.elb.amazonaws.com/api/v2/data")!  // url to get commodity data
     
-    let regionsRequestUrl = NSURL(string: "http://dualstack.FL2-Dev-api02-1164870265.us-east-1.elb.amazonaws.com/api/v2/data/search_region")! // url to get region data
+    private let regionsRequestUrl = NSURL(string: "http://dualstack.FL2-Dev-api02-1164870265.us-east-1.elb.amazonaws.com/api/v2/data/search_region")! // url to get region data
     
     
-    let commodityRequestPara = ["data": ["commodityUnit": "2013-04-25 18:03:12"]] // post method parameter for commodity request
+    private let commodityRequestPara = ["data": ["commodityUnit": "2013-04-25 18:03:12"]] // post method parameter for commodity request
     
-    let regionsRequestPara = ["search": "ott"] // post method parameter for regisons request
+    private let regionsRequestPara = ["search": "ott"] // post method parameter for regisons request
     
     //----------------------end-------------------------------------
     
@@ -57,7 +57,7 @@ class APICommunicator: NSObject {
     
     //----------------------------request opertaion---------------------------
     
-    func getDataFromAPI(parameters: [String : AnyObject], url:NSURL, method: Alamofire.Method, cacheKey: String) {
+    private func getDataFromAPI(parameters: [String : AnyObject], url:NSURL, method: Alamofire.Method, cacheKey: String) {
         
         // connect API and send data for data processor
 
@@ -79,7 +79,7 @@ class APICommunicator: NSObject {
     }
     
     
-    func reachRegionsAPI(){
+    internal func reachRegionsAPI(){
         
         // get region
         getDataFromAPI(regionsRequestPara, url:regionsRequestUrl, method: .POST, cacheKey: DataProcessor.sharedInstance().regionsCacheKey)
@@ -87,7 +87,7 @@ class APICommunicator: NSObject {
     }
     
   
-    func reachCommodityUnitAPI(){
+    internal func reachCommodityUnitAPI(){
         
         // get commodityUnit
         
